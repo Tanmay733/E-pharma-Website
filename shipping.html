@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="shipping.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<!-- Favicon -->
+<link rel="shortcut icon" href="WhatsApp Image 2021-05-02 at 2.25.24 PM.jpeg" type="image/x-icon">
+
+<!-- Box icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- Custom StyleSheet -->
+<link rel="stylesheet" href="style.css" />
+<title>Better-you Pharmacy</title>
+    </head>
+
+
+
+<body>
+    <nav style="background-color: #243a6f;" class="nav">
+        <div class="navigation container">
+            <div class="logo" style="color: white;">
+                <h1>Better-You Pharmacy</h1>
+            </div>
+
+            <div class="menu" style="color: white;">
+                <div class="top-nav">
+                    <div class="logo">
+                        <h1>Better-You Pharmacy</h1>
+                    </div>
+                    <div class="close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product1.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Log In</a>
+                    </li>
+                    
+                    
+                    <li class="nav-item" >
+                        <a href="cart.html"  class="cart" class="nav-link icon"><i class="bx bx-shopping-bag"></i><span>0</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="cart.html" class="cart-icon">
+                <i class="bx bx-shopping-bag"></i>
+            </a>
+
+            <div class="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </nav>
+<div style="padding-top:50px; " class="container">
+    <form action="" method="POST" id="address-form">
+      <fieldset>
+        <legend>Shipping Address</legend>
+        <p class="input-wrapper lg-half">
+          <input type="text" name="shipping-first-name" id="shipping-first-name" required>
+          <label for="shipping-first-name">First Name</label>
+        </p>
+        <p class="input-wrapper lg-half">
+          <input type="text" name="shipping-last-name" id="shipping-last-name" required>
+          <label for="shipping-last-name">Last Name</label>
+        </p>
+        <p class="input-wrapper lg-half">
+          <input type="text" name="shipping-street-address" id="shipping-street-address" required>
+          <label for="shipping-street-address">Street Address</label>
+        </p>
+        <p class="input-wrapper lg-third">
+          <input type="text" name="shipping-apt-address" id="shipping-apt-address">
+          <label for="shipping-apt-address">Apt/Suite</label>
+        </p>
+        <p class="input-wrapper lg-half">
+          <input type="text" name="shipping-city" id="shipping-city" required>
+          <label for="shipping-city">City</label>
+        </p>
+        <p class="input-wrapper lg-third">
+          <input type="text" name="shipping-postal-code" id="shipping-postal-code" required>
+          <label for="shipping-postal-code">Zip/Postal Code</label>
+        </p>
+        <p class="input-wrapper lg-half">
+          <input type="text" id="shipping-country" list="shipping-country-list" name="shipping-country" required>
+          <datalist id="shipping-country-list">
+            <option value="Afghanistan - AF">
+            <option value="Albania - AL">
+            <option value="Algeria - DZ">
+            <option value="American Samoa - AS">
+            
+            <option value="India - IN">
+            
+          </datalist>
+          <label for="shipping-country">Country</label></p>
+      </fieldset>
+      <input type="checkbox" name="" id="same-address">
+      <label for="same-address">Billing Address is the Same as Shipping</label>
+      <fieldset>
+        <legend>Billing Address</legend>
+        <p class="input-wrapper lg-half">
+          <input type="text" name="billing-first-name" id="billing-first-name" required>
+          <label for="billing-first-name">First Name</label>
+        </p>
+        <p class="input-wrapper lg-half">
+          <input type="text" name="billing-last-name" id="billing-last-name" required>
+          <label for="billing-last-name">Last Name</label>
+        </p>
+        <p class="input-wrapper lg-half">
+          <input type="text" name="billing-street-address" id="billing-street-address" required>
+          <label for="billing-street-address">Street Address</label>
+        </p>
+        <p class="input-wrapper lg-third">
+          <input type="text" name="billing-apt-address" id="billing-apt-address">
+          <label for="billing-apt-address">Apt/Suite</label>
+        </p>
+        <p class="input-wrapper lg-half">
+          <input type="text" name="billing-city" id="billing-city" required>
+          <label for="billing-city">City</label>
+        </p>
+        <p class="input-wrapper lg-third">
+          <input type="text" name="billing-postal-code" id="billing-postal-code" required>
+          <label for="billing-postal-code">Zip/Postal Code</label>
+        </p>
+        <p class="input-wrapper lg-half">
+          <input type="text" id="billing-country" list="billing-country-list" name="billing-country" required>
+          <datalist id="billing-country-list">
+            <option value="Afghanistan - AF">
+            <option value="Albania - AL">
+            <option value="Algeria - DZ">
+            <option value="American Samoa - AS">
+            <option value="India - IN">
+           
+           
+          </datalist>
+          <label for="billing-country">Country</label></p>
+      </fieldset>
+      <p class="submit-wrap"><button class="btn">Proceed To Pay &rarr;</button></p>
+    </form>
+  </div>
+   <script src="product1.js"></script>
+   <script src="product2.js"></script>
+   <script src="indexp.js"></script>
+  </body>
+  </html>
